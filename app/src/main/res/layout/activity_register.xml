@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootRL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation='vertical'
+    android:background="@drawable/menu_screen_bg1"
+    tools:context="cse3310.beerpong.RegisterActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:id="@+id/reg_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="60sp"
+        android:textColor="#ffff"
+        android:paddingTop="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_text"
+        android:text="Name"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reg_text"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:background="@drawable/whitebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_edit"
+        android:layout_below="@+id/name_text"
+        android:inputType="textCapSentences"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter your name here.."
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_text"
+        android:text="Age"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name_edit"
+        android:paddingTop="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        />
+
+    <EditText
+        android:background="@drawable/whitebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/age_edit"
+        android:layout_below="@+id/age_text"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:hint="Enter your age here.."
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cont_button"
+        android:layout_below="@+id/age_edit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/accept_button_effect"
+        android:textStyle="bold"
+        android:layout_marginTop="65dp"
+        />
+
+</RelativeLayout>

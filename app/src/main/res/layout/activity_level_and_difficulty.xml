@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_screen_bg1"
+    tools:context="cse3310.beerpong.LevelAndDifficulty">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_button_effect" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvl_text"
+        android:text="Choose\nyour level"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="45sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lvl_text">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/btnLevel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/level1_button_effect"
+                    android:layout_marginTop="40dp"
+                     />
+
+            <Button
+                android:id="@+id/btnLevel2"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/level2_button_effect"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/btnLevel1"
+                android:layout_alignStart="@+id/btnLevel3" />
+
+                <Button
+                    android:id="@+id/btnLevel3"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btnLevel2"
+                    android:background="@drawable/level3_button_effect"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:id="@+id/btnLevel4"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/btnLevel3"
+                    android:background="@drawable/level4_button_effect"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                     />
+            </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

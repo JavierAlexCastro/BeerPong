@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cse3310.beerpong.Tables"
+    android:background="@drawable/menu_screen_bg1">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_button_effect"
+        android:layout_below="@+id/coins"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coin_bg"
+        android:src="@drawable/red_box"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/coins"
+        android:layout_alignLeft="@+id/amount"
+        android:layout_alignRight="@+id/amount"
+        android:layout_alignTop="@+id/coins"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/coins"
+        android:src="@drawable/coin"
+        android:adjustViewBounds="true"
+        android:maxHeight="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/amount"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/coins"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/t_shop_1"
+                android:background="@drawable/black_box"
+                android:layout_alignBottom="@+id/imageView8"
+                android:layout_alignLeft="@+id/imageView8"
+                android:layout_alignRight="@+id/imageView8"
+                android:layout_alignTop="@+id/imageView8"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_price1"
+                android:src="@drawable/price_50_1"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageView8"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/uta_table1"
+                android:adjustViewBounds="true"
+                android:maxWidth="220dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/t_shop_2"
+                android:background="@drawable/black_box"
+                android:layout_alignBottom="@+id/imageView9"
+                android:layout_alignLeft="@+id/imageView9"
+                android:layout_alignRight="@+id/imageView9"
+                android:layout_alignTop="@+id/imageView9"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_price2"
+                android:src="@drawable/price_100_3"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageView9"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/t_shop_3"
+                android:background="@drawable/black_box"
+                android:layout_alignBottom="@+id/imageView10"
+                android:layout_alignLeft="@+id/imageView10"
+                android:layout_alignRight="@+id/imageView10"
+                android:layout_alignTop="@+id/imageView10"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView10"
+                android:src = "@drawable/khalili_table1"
+                android:adjustViewBounds="true"
+                android:maxWidth="220dp"
+                android:layout_below="@+id/button7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/t_price3"
+                android:src="@drawable/price_250"
+                android:adjustViewBounds="true"
+                android:maxWidth="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imageView10"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button7"
+                android:layout_below="@+id/t_price2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buy_button_effect"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                android:layout_below="@+id/t_price3"
+                android:background="@drawable/buy_button_effect"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_button_effect"
+                android:id="@+id/button4"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/t_price1"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:adjustViewBounds="true"
+                android:maxWidth="220dp"
+                android:src = "@drawable/texas_table1"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_below="@+id/button4"
+                android:layout_alignStart="@+id/t_shop_1" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

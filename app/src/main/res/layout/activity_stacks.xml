@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_screen_bg1"
+    tools:context="cse3310.beerpong.Stacks">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_button_effect" />
+
+    <TextView
+        android:id="@+id/stacks_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Choose the\nnumber of cups"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/stacks_text">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/cups10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cup10_effect"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/cups6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cup6_effect"
+                android:layout_below="@+id/cups10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/cups3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cup3_effect"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/cups6"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/cups1"
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:background="@drawable/cup1_effect"
+                android:layout_below="@+id/cups3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="55dp"/>
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

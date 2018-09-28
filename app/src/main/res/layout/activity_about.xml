@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_screen_bg1"
+    >
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/back_button_effect" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_text"
+                android:text="About"
+                android:textSize="60sp"
+                android:textColor="#ffff"
+                android:paddingTop="40dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtbg"
+                android:src="@drawable/whitebox"
+                android:layout_alignBottom="@+id/about_text"
+                android:layout_alignLeft="@+id/about_text"
+                android:layout_alignRight="@+id/about_text"
+                android:layout_alignTop="@+id/about_text"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_text"
+                android:text="This app was developed\nby 4 students at UTA for a\nproject. Through gameplay and\ntime spent in the game, you can\nunlock features, skins and other\nthings to make the gaming\nexperience better for you. If\nyou have any questions about\nbugs or errors please don't\ncontact anyone as this app will\nnot be updated in the future."
+
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:layout_below="@+id/title_text"
+                android:textColor="#000"
+                android:layout_marginTop="45dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/erase"
+                android:layout_below="@+id/about_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Erase Data"
+                android:layout_marginBottom="35dp"
+                />
+            </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
